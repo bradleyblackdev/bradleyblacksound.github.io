@@ -37,3 +37,8 @@ for (var a = 1; a <=100; a++) {
 }
 }
 fizzBuzz();
+
+const names = [];
+names.push('Max');
+const length = names.length;
+console.log(length);
