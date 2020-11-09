@@ -13,7 +13,7 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    return function (value) { //return an anonymous function will take the parameter value
+    return function(value) { //return an anonymous function will take the parameter value
         if (value > base) { //determine truthiness
             return true;
         } else { //else output for falsiness

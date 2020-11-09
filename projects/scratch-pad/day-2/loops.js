@@ -127,7 +127,7 @@ function printObjectValuesInReverse(object) {
     array.push(object[key]); //push object values into the array
   }
   for(var a = array.length - 1; a >= 0; a--) { //before outputting this array, run it through a loop to return values from final to first
-    console.log(array[a]);
+    console.log(array[a]); //log these values as we encounter them
   }
   
   
