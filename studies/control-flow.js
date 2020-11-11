@@ -13,14 +13,14 @@ a corresponding action occurs.
     // a block of code in curly braces is executed
     // }
 if (5 > 4) {
-    console.log(true);
+    console.log(true); //logs true
 }
 
 var mood = "pretty, pretty, good";
 if (mood !== "ehh") {
     mood = mood.split(", ")
 }
-console.log(mood);
+console.log(mood); //logs the value of mood
 
 
 //2. Else-if
@@ -34,10 +34,12 @@ if (space < "earth") {
 } else if (space < "the known universe") {
     console.log("bigger still");
 } else if (space === Infinity) {
-    console.log("That's correct")
+    console.log("That's correct") //this is the value that will be logged
 }  else if (space === Infinity) {
       console.log("conclusion already reached")
 }
+
+
 
 //3. Else
 //An else statement does not check for truthiness of a condition
@@ -48,4 +50,4 @@ if (1 === 2) {
     console.log(true);
 } if (2 !== 2) {
     console.log(true);
-} else {console.log("no idea")};
+} else {console.log("no idea")}; //this value will be logged

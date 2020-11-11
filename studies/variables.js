@@ -34,3 +34,36 @@ var myVariable = 1;
 var myVariable = true;
 myVariable = "someString";
 
+
+/*
+Var, let, const
+These are three types of variables used in Javascript, and each has unique properties
+
+Hoisting is when javascript scans an entire program of code, and,
+depending on the variable or data type, "hoists" it to the top of its scope.
+In some instances, this allows variables to be used before the code line on which they are initialized or defined
+
+Var:
+-can be reassigned
+-hoisted to top of scope
+-scoped to functions
+-not scoped to if or loop blocks
+
+Let:
+-can be reassigned
+-not hoisted. only can be accessed or referenced after declaration
+-scoped to functions, if, and loop blocks
+
+Const:
+-CANNOT be reassigned //however, when assigned to complex objects, the objects can be changed
+-not hoised
+-scoped to functions, if, and loop blocks
+
+*/
+
+//console.log(theVar, the Const, theLet) //only theVar is hoisted and can be referenced here; other 2 cause reference error
+var theVar;
+const theConst = 0;
+let theLet;
+console.log(theVar, theConst, theLet); //all three can be logged
+// theConst = 1; //running this code will produce a type error

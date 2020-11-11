@@ -39,5 +39,19 @@ console.log(namedFunction); //not called but referenced
 console.log(namedFunction()); //called
 
 //When called, we replace the parameters with arguments
-console.log(nameTheFunction("Our first argument", "Out second argument"));
+console.log(nameTheFunction("Our first argument", "Our second argument"));
 
+/*
+Scope
+Functions are scoped, which allows us to better manage our data.
+Variables declared globally can be used in a function.
+However, the inverse is not true
+*/
+var globoVar;
+function printVar() {
+    var funkVar;
+    console.log(globoVar)
+}
+printVar(); //returns undefined, as the function can access the variable globoVar
+// console.log(funkVar); if ran,this code will return a reference error,
+//as variables scoped to a function aren't accessible globally

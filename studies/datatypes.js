@@ -32,7 +32,7 @@ Here are some of data types available in Javascript
 //any number, positive or negative, whole or fractional
 //1, 2400, -5, 1.6, etc
 var myNum = 9
-console.log("my number is " + myNum);
+console.log("my number is " + myNum); //console logs the concatenated string
 
 
 //2. String
@@ -42,7 +42,7 @@ console.log('the single quote string');
 console.log("double quotes for this string");
 console.log(`backticks allow for tricks i haven't learned yet`);
 var aArr = {thisKeyIsASpacelessStringAndRequiresNoQuotes: "though this value, and all values, requires quotes"}
-console.log(aArr);
+console.log(aArr); //console logs the value of aArr
 
 
 //3. Boolean

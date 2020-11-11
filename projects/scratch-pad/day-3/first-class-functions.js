@@ -123,9 +123,14 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-  return strings.every(test); //every method evaluates all elements of an array to see if they satisfy a given function
-  
-
+//return strings.every(test); //every method evaluates all elements of an array to see if they satisfy a given function
+var flipTru = true;
+for (var i = 0; i <= strings.length - 1; i++) {
+    if(test(strings[i]) === false) {
+        flipTru = false;
+    }
+}
+return flipTru;
         
 
     
